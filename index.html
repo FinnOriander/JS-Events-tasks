@@ -1,11 +1,32 @@
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <script src="script.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <style>
+      .lime-mode {
+        background-color: SpringGreen;
+        color: black;
+      }
+      body {
+        padding: 10;
+        background-color: HotPink;
+        color: black;
+      }
+      button {
+        background-color:DarkTurquoise;
+        width:49%;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Hello there!</h1>
-    <a href="/me.html">My other page</a>
+    <h1
+      id="Hello"
+      onmouseover="this.innerHTML='Goodbye Mars'"
+      onmouseout="this.innerHTML='Hello World!'"
+    ></h1>
+    <button id="Btn" onclick="HelloWorld()">Press Me!</button>
+    
+    <button id="cBtn" onclick="Changebg()">Change bg colour</button>
   </body>
 </html>
