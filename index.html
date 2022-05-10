@@ -11,10 +11,16 @@
         padding: 10;
         background-color: HotPink;
         color: black;
+        font-family: monospace, Courier;
       }
       button {
-        background-color:DarkTurquoise;
-        width:49%;
+        background-color: DarkTurquoise;
+        width: 49%;
+        padding: 5;
+        margin-bottom: 5;
+      }
+      h1 {
+        text-align: center;
       }
     </style>
   </head>
@@ -26,7 +32,10 @@
       onmouseout="this.innerHTML='Hello World!'"
     ></h1>
     <button id="Btn" onclick="HelloWorld()">Press Me!</button>
-    
+
     <button id="cBtn" onclick="Changebg()">Change bg colour</button>
+    <br />
+    <button style="background: transparent; border: none !important"></button>
+    <button id="eBtn" onclick="Enable()">Enable bg colour</button>
   </body>
 </html>
